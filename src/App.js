@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import AllMeetupsPage from "./pages/AllMeetups";
-import FavouritesPage from "./pages/Favourites";
+import FavoritesPage from "./pages/Favorites";
 import NewMeetupPage from "./pages/NewMeetup";
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
         <Route path="/new-meetup">
           <NewMeetupPage />
         </Route>
-        <Route path="/favourites">
-          <FavouritesPage />
+        <Route path="/favorites">
+          <FavoritesPage />
         </Route>
       </Switch>
     </div>
