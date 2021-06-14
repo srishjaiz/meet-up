@@ -4,12 +4,15 @@ import { BrowserRouter } from "react-router-dom";
 
 import "./index.css";
 import App from "./App";
+import { FavoriteContextProvider } from "./store/favorites-context";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <FavoriteContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </FavoriteContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
