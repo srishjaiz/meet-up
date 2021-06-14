@@ -21,7 +21,7 @@ function NewMeetupForm(props) {
       address: inputAddress,
       description: inputDescription,
     };
-    console.log(meetupData);
+    props.addMeetup(meetupData);
   }
 
   return (
